@@ -1,0 +1,8 @@
+# Static IP addresses for the proxmox server boxes
+# Box-1
+10.0.0.101
+# Box-2
+10.0.0.102
+
+# Can also use hostnames
+
