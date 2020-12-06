@@ -7,10 +7,7 @@
 - press enter 
 - test connection to remote server: `ssh (IP address)`
 - verify public key was copied to remote server (on the remote server): `ls -la .ssh` This command should show an authorized keys file (on the remote server)
--  Check the local ssh directory on the remote server: `cat .ssh/authorized_keys` this should show there is a public key stored for ssh access to the current remote server
-- enter passphrase
-- view ssh directory: `ls -la .ssh`
-- view public key: `cat .ssh/id_ed25519.pub`
-- Make sure the correct key is used for ansible connections. On the local machine (not remote): `ssh -i ~/.ssh/ansible 10.0.0.25` (remote server IP here)
-
+- view the authorized keys file: `cat .ssh/authorized_keys`. this should show that both keys are stored for ssh access to the current remote server
+- Test the connection using the correct (ansible) key: `ssh -i /.ssh/ansible 10.0.0.25` (use the remote server IP here)
+- 
 ### 
