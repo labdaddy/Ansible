@@ -1,4 +1,4 @@
-## Ansible
+### Ansible Key Setup
 - create ssh key dedicated to this repo: `ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C "comment goes here"`
 - will ask where you want to save the new keys. You don't want this to be in the default location because it will overwrite your existing keys. Instead you need an ansible specific key directory. Something like: `/home/username/.ssh/ansible` (or whatever)
 - You’ll be asked to enter a passphrase for this key, ignore this and press enter
@@ -11,3 +11,6 @@
 - enter passphrase
 - view ssh directory: `ls -la .ssh`
 - view public key: `cat .ssh/id_ed25519.pub`
+- Make sure the correct key is used for ansible connections. On the local machine (not remote): `ssh -i ~/.ssh/ansible 10.0.0.25` (remote server IP here)
+
+### 
