@@ -9,15 +9,7 @@
 - To enable ssh to start automatically after each system reboot by using the systemctl command: `sudo systemctl enable sshd`
 - To disable ssh persistence after reboot enter: `sudo systemctl disable sshd`
 
-##### Create a hosts file of servers you want to repeatedly log into so you dont have to enter IP addresses every time
-- Change to ssh directory: `cd .ssh`
-- Open vi and add the host data:
-- `vi config`
-- `Host server1`
-- `HostName [ip address]`
-- `User root`
-- `Port 22`
-- Then save and exit
+
 
 ##### Ssh server configuration is needed to harden server security. The most common settings to enhance security are changing the port number, disabling root logins, and limiting access to only certain users. To edit these settings access the /etc/ssh/sshd_config file: `sudo vim /etc/ssh/sshd_config`
 ##### Disabling root logins and editing the default port number are good places to start.
@@ -56,3 +48,13 @@
 - Now double check with: `ssh servername`
 - Should allow login with no password prompt 
 - No need to authenticate !
+
+##### Create a hosts file of servers you want to repeatedly log into so you dont have to enter IP addresses every time
+- Change to ssh directory: `cd .ssh`
+- Open vi and add the host data:
+- `vi config`
+- `Host server1`
+- `HostName [ip address]`
+- `User root`
+- `Port 22`
+- Then save and exit
