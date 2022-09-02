@@ -1,4 +1,4 @@
-###CREATE AND SHARE SSH KEYS
+### CREATE AND SHARE SSH KEYS
 
 ### OpenSSH setup
 - Install openssh on RedHat based systems: `sudo yum –y install openssh-server openssh-clients`
