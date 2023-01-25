@@ -1,4 +1,4 @@
-###SETUP SECURE SERVERS FOR ANSIBLE
+### SETUP SECURE SERVERS FOR ANSIBLE
 The first configuration to be performed on any new server—especially any server
 with any exposure (direct or indirect) to the public Internet)—is security configuration.
 There are nine basic measures to ensure servers are secure from unauthorized access
